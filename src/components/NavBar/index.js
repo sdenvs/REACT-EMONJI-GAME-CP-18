@@ -15,12 +15,8 @@ const NavBar = props => {
       </div>
       {status && (
         <div className="d-flex">
-          <p>
-            Score: <span>{score}</span>
-          </p>
-          <p>
-            Top Score: <span>{topscore}</span>
-          </p>
+          <p>Score: {score}</p>
+          <p>Top Score: {topscore}</p>
         </div>
       )}
     </nav>
