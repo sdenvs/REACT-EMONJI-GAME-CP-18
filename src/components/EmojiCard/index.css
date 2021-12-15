@@ -1,1 +1,25 @@
 /* Write your code here. */
+.emojiImage {
+  width: 45px;
+  height: 45px;
+}
+.emojiCard {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #ffffff33;
+  border-width: 2px;
+}
+@media (min-width: 768px) {
+  .emojiImage {
+    width: 70px;
+    height: 70px;
+  }
+  .emojiCard {
+    width: 120px;
+    height: 120px;
+    border-radius: 18px;
+  }
+}

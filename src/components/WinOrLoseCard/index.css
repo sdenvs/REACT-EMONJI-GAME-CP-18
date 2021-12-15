@@ -1,1 +1,29 @@
 /* Write your code here. */
+* {
+  font-family: 'roboto';
+  font-weight: bold;
+  text-align: center;
+}
+.resultB {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 80%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #ffffff33;
+  border-width: 2px;
+}
+.winImage {
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .resultB {
+    width: 50%;
+  }
+  .winImage {
+    width: 40%;
+  }
+}
+
+.winlosecard {
+  width: 60%;
+}

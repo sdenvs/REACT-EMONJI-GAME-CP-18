@@ -1,1 +1,17 @@
 /* Write your code here. */
+.bgContainer {
+  background-image: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+  background-size: cover;
+  height: 100vh;
+  overflow: scroll;
+}
+.ulList {
+  list-style-type: none;
+  padding: 0px;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .ulList {
+    width: 50%;
+  }
+}

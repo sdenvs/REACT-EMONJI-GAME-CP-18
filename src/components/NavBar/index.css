@@ -1,1 +1,31 @@
 /* Write your code here. */
+.bgNavbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: cover;
+}
+.bgNavbar .nav-heading {
+  font-size: 15px;
+}
+.bgNavbar p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.logo-image {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .bgNavbar .nav-heading {
+    font-size: 25px;
+  }
+  .bgNavbar p {
+    font-size: 20px;
+    margin-right: 18px;
+  }
+  .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+}
