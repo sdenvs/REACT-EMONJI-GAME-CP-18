@@ -12,7 +12,9 @@ const EmonjiCard = props => {
       onClick={shuffleList}
       className="emojiCard d-flex flex-row justify-content-center align-items-center m-1 m-md-2"
     >
-      <img className="emojiImage" src={emojiUrl} />
+      <button>
+        <img alt={emojiName} className="emojiImage" src={emojiUrl} />
+      </button>
     </li>
   )
 }

@@ -31,16 +31,15 @@ class EmojiGame extends Component {
   }
 
   shuffledEmojisList = id => {
-    const {emojisList, score, gameList, topscore} = this.state
+    const {emojisList, score, gameList} = this.state
     const newList = emojisList.sort(() => Math.random() - 0.5)
     if (gameList.includes(id)) {
       this.setState({
         status: false,
-        topscore: topscore < score ? score : topscore,
       })
     } else {
       if (score === 11) {
-        this.setState(prev => ({status: false, topscore: score + 1}))
+        this.setState(prev => ({status: false}))
       }
       this.setState(prev => ({
         emojisList: newList,
@@ -78,11 +77,13 @@ class EmojiGame extends Component {
 
   retartGame = () => {
     const {emojisList} = this.props
+    const {topscore, score} = this.state
     this.setState({
       emojisList,
       status: true,
       gameList: [],
       score: 0,
+      topscore: topscore < score ? score : topscore,
     })
   }
 
@@ -91,7 +92,7 @@ class EmojiGame extends Component {
     return (
       <div className="bgContainer">
         <div>
-          <NavBar score={score} topscore={topscore} />
+          <NavBar status={status} score={score} topscore={topscore} />
         </div>
 
         {status ? this.gameMode() : this.resultMode()}

@@ -6,7 +6,8 @@
 .bgNavbar .nav-heading {
   font-size: 15px;
 }
-.bgNavbar p {
+.bgNavbar p,
+h1 {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -20,7 +21,8 @@
   .bgNavbar .nav-heading {
     font-size: 25px;
   }
-  .bgNavbar p {
+  .bgNavbar p,
+  h1 {
     font-size: 20px;
     margin-right: 18px;
   }

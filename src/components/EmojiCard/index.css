@@ -12,6 +12,11 @@
   border-color: #ffffff33;
   border-width: 2px;
 }
+.emojiCard button {
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
 @media (min-width: 768px) {
   .emojiImage {
     width: 70px;

@@ -10,11 +10,12 @@ const WinOrLoseCard = props => {
   const wonGame = () => (
     <div className="resultB d-flex flex-column justify-content-center align-items-center p-3">
       <img
+        alt="win or lose"
         className="winImage m-3"
         src="https://assets.ccbp.in/frontend/react-js/won-game-img.png"
       />
       <h1 className="h3 text-light">You Won</h1>
-      <p className="h5 text-light">best Score</p>
+      <p className="h5 text-light">Best Score</p>
       <p className="h3 text-primary">{score}/12</p>
       <button onClick={restart} className="btn btn-warning">
         Play Again
@@ -25,6 +26,7 @@ const WinOrLoseCard = props => {
   const loseGame = () => (
     <div className="resultB d-flex flex-column justify-content-center align-items-center p-3">
       <img
+        alt="win or lose"
         className="winImage m-3"
         src="https://assets.ccbp.in/frontend/react-js/lose-game-img.png"
       />
